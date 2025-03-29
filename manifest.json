@@ -1,7 +1,7 @@
 {
     "name": "Bus Schedule App",
     "short_name": "BusApp",
-    "start_url": "/",
+    "start_url": "/bus_schedule/",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#4CAF50",
