@@ -38,5 +38,16 @@
     <div id="schedule"></div>
 
     <script src="app.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/bus_schedule/service-worker.js')
+            .then(registration => {
+                console.log('Service Worker registered successfully with scope: ', registration.scope);
+            })
+            .catch(error => {
+                console.error('Service Worker registration failed: ', error);
+            });
+        }
+    </script>
 </body>
 </html>
