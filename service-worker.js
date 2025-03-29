@@ -2,11 +2,11 @@ self.addEventListener('install', event => {
     event.waitUntil(
         caches.open('bus-schedule-cache').then(cache => {
             return cache.addAll([
-                '/',
-                '/index.html',
-                '/style.css',
-                '/app.js',
-                '/manifest.json'
+                '/bus_schedule/',
+                '/bus_schedule/index.html',
+                '/bus_schedule/style.css',
+                '/bus_schedule/app.js',
+                '/bus_schedule/manifest.json'
             ]);
         })
     );
